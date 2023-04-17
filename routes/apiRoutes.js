@@ -4,7 +4,7 @@ let db = require("../db/db.json")
 const fs = require('fs');
 
 // Gets Notes
-router.get('/api/notes', (req, res) =>{
+app.get('/api/notes', (req, res) =>{
 db = JSON.parse(fs.readFileSync("./db/db.json"))
     res.json(db)
 
@@ -12,7 +12,7 @@ db = JSON.parse(fs.readFileSync("./db/db.json"))
 
 
 // Create Member
-router.post('/', (req, res) => {
+app.post('/api/notes', (req, res) => {
   const newNote = {
     ...req.body,
     id: uuid.v4()
@@ -28,3 +28,5 @@ router.post('/', (req, res) => {
   res.json(db);
 
 });
+
+module.exports = app;
