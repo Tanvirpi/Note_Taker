@@ -29,4 +29,17 @@ app.post('/api/notes', (req, res) => {
 
 });
 
+// Delete Route for homepage
+app.delete('/api/notes/:id',(req, res) => {
+  const notDeletedNotes = db.filter(ele => ele.id != req.params.id)
+  console.log(notDeletedNotes)
+  db = notDeletedNotes;
+  fs.writeFileSync('./db/db.json', JSON.stringify(db),function(err,data){
+    if(err) throw err;
+
+  });
+  res.json(db);
+
+});
+
 module.exports = app;
