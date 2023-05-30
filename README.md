@@ -1,4 +1,9 @@
 # Note Taker Starter Code
+# Note Taker Starter Code
+
+## Coded By: Tanvir
+
+### Requirements:
 
 GIVEN a note-taking application
 WHEN I open the Note Taker
@@ -13,3 +18,15 @@ WHEN I click on an existing note in the list in the left-hand column
 THEN that note appears in the right-hand column
 WHEN I click on the Write icon in the navigation at the top of the page
 THEN I am presented with empty fields to enter a new note title and the note’s text in the right-hand column
+
+### Deployed Link
+[Live](https://peaceful-peak-42959.herokuapp.com/)
+
+
+### Screenshot
+
+![Image](https://github.com/Tanvirpi/Note_Taker/blob/main/assets/Screenshot.png)
+
+
+### References
+1. [W3schools](https://www.w3schools.com/)
